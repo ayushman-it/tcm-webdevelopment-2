@@ -1,0 +1,124 @@
+/* Reboot */
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* div{
+    background-color: blue;
+    color: white;
+} */
+
+/* Simple Selector */
+
+/* h1{
+    color: red;
+}
+
+.ansh{
+    color: orange;
+}
+
+.om{
+    background-color: pink;
+}
+
+.anshika{
+    font-size: 45px;
+}
+
+p{
+    color: blue;
+} */
+
+/* Combinator Selector */
+/* 
+    a. Child Selector (>)
+    b. Desendent Selector (span)
+    c. adjustend Selector (+)
+    d. Sibling Selector (~)
+*/
+
+/*     a. Child Selector (>) */
+
+/* .parent1 > .parent2 > .parent3 > .parent4 > .parent5 >  h1{
+    color: red;
+} */
+
+/*     b. Desendent Selector (span) */
+
+/* .parent1  h1{
+    color: red;
+} */
+
+/*     c. adjustend Selector (+) */
+
+/* h1{
+    color: red;
+} */
+
+/* .parent1 + h1{
+    color: red;
+} */
+
+/*     d. Sibling Selector (~) */
+
+/* .family h3 ~ h1{
+    color: orange;
+}
+
+.family h2 ~ h3{
+    color: red;
+}
+
+.family h1 ~ h2{
+    color: blue;
+} */
+
+/* Psuedo Selector */
+/* 
+    :hover
+    :focus
+    :visited
+    :active
+
+    :nth-child()
+    ::after
+    :before
+    :first-child
+    :last-child
+    ::first-letter
+    :last-letter
+    ::first-line
+*/
+
+/* .family{
+    background-color: lightcoral;
+}
+
+
+.family:hover{
+    background-color: rgb(85, 85, 120);
+    color: white;
+}
+
+button{
+    background-color: red;
+    color: white;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+button:focus{
+    background-color: chocolate;
+} */
+
+/* Attribute Selector */
+/* 
+[href="#"]{
+    color: lightgray;
+    cursor: not-allowed;
+} */
