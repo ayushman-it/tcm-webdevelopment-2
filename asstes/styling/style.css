@@ -1,7 +1,84 @@
 *{
     margin: 0;
 }
+
 body{
-    background-color: black;
-    color: white;
+    background-color: pink;
+    color:black;
 }
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.col{
+    border: 1px solid white;
+
+    /* Free Hand Props */
+    /* padding-top: 10px;
+    padding-left: 10px;
+    padding-right:10px ;
+    padding-bottom: 10px; */
+
+    /* Short Hand */
+    padding: 10px;
+    
+
+    /* Regular Hand Props */
+    /* padding: 10px 10px; */
+}
+
+.box-blue{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 40px auto;
+    padding: 10px;
+
+    /* Border */
+    border-width: 2px;
+    border-style: dotted;
+    border-color: red;
+
+    /* Outline */
+    outline-width: 2px;
+    outline-style: dotted;
+    outline-color: green;
+    outline-offset: 10px;
+
+    /* Opacity */
+    /* opacity: 0.5; */
+
+
+    /* Visible */
+    /* visibility: hidden; */
+    /* display:none; */
+    
+}
+.box-green{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 30px auto;
+    padding: 10px;
+
+    /* Free Hand Props */
+    /* margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px; */
+
+    /* Short Hand */
+    /* margin: 30px; */
+
+    /* Regular */
+    
+}
+
