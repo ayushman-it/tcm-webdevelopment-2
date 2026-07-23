@@ -13,15 +13,17 @@
     align-items: center;
 }
 
-.topbar{
-    padding: 20px 0;
-    background-color: yellow;
-    color: black;
+.topabar{
+    padding: 30px 0;
+    background-color: brown;
+    color: white;
 }
+
 header{
-    padding: 10px;
+    padding: 10px 0;
     background-color: black;
     color: white;
+
     position: sticky;
     top: 0;
 }
@@ -29,13 +31,13 @@ header{
 header ul{
     display: flex;
     gap: 20px;
-    list-style: none;
+    list-style-type: none;
     justify-content: end;
 }
 
 header ul a{
-    font-size: 20px;
     text-decoration: none;
+    font-size: 20px;
     color: white;
 }
 
@@ -43,48 +45,50 @@ header ul a{
 .wp-img{
     width: 80px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 40px;
+    right: 40px;
 }
+
 
 .ground{
     width: 300px;
     height: 300px;
-    background-color: darkgreen;
-    margin: 30px auto;
+    background-color: green;
+    margin: 40px auto;
 
     position: relative;
 }
 
+.ground:hover{
+   box-shadow: 16px 16px 47px -15px #008000;
+   transition: 0.8s;
+}
+
 .ball{
-    right: 0;
     width: 80px;
     height: 80px;
+    background-color: bisque;
     border-radius: 100%;
-    background-color: wheat;
-    /* position: absolute;
-    bottom: 0; */
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-/* .ball{
-    position: inherit;
-} */
-
-.scrollbar{
-    width: 80%;
-    margin: 0 auto;
+.ball{
+    position: static;
 }
+
 
 .flex-box{
     display: flex;
-    gap: 20px;
-    overflow: auto;
-    flex-direction: row;
-}
-.card{
-    width: 300%;
+    overflow-x: auto;
 }
 
-.card {
-    width: 200px;
+.card{
+    width: 300px;
+    padding: 20px;
 }
+
+
+
