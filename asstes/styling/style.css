@@ -1,7 +1,148 @@
 *{
     margin: 0;
 }
+
+:root{
+    --color-primary: blue;
+    --color-success:green;
+    --color-danger: red;
+    --color-warning: orange;
+    --color-dark: black;
+    --color-info: skyblue;
+    --color-secondary: darkgray;
+    --color-light: white;
+
+    --p-0:0;
+    --p-1:10px;
+    --p-2:20px;
+    --p-3:30px;
+    --p-4:40px;
+    --p-5:50px;
+
+    /* s = Start / Left */
+    --ps-0:0;
+    --ps-1:10px;
+    --ps-2:20px;
+    --ps-3:30px;
+    --ps-4:40px;
+    --ps-5:50px;
+
+    /* e = end / Right */
+    --pe-0:0;
+    --pe-1:10px;
+    --pe-2:20px;
+    --pe-3:30px;
+    --pe-4:40px;
+    --pe-5:50px;
+
+    /* t = Top */
+    --pt-0:0;
+    --pt-1:10px;
+    --pt-2:20px;
+    --pt-3:30px;
+    --pt-4:40px;
+    --pt-5:50px;
+
+    /* b = Bottom */
+    --pb-0:0;
+    --pb-1:10px;
+    --pb-2:20px;
+    --pb-3:30px;
+    --pb-4:40px;
+    --pb-5:50px;
+
+    /* X = Left-Right */
+    --px-0:0;
+    --px-1:10px;
+    --px-2:20px;
+    --px-3:30px;
+    --px-4:40px;
+    --px-5:50px;
+
+    /* Y = top-bottom */
+    --py-0:0;
+    --py-1:10px;
+    --py-2:20px;
+    --py-3:30px;
+    --py-4:40px;
+    --py-5:50px;
+
+
+    /* Margins */
+    --m-0:0;
+    --m-1:10px;
+    --m-2:20px;
+    --m-3:30px;
+    --m-4:40px;
+    --m-5:50px;
+
+    /* s = Start / Left */
+    --ms-0:0;
+    --ms-1:10px;
+    --ms-2:20px;
+    --ms-3:30px;
+    --ms-4:40px;
+    --ms-5:50px;
+
+    /* e = end / Right */
+    --me-0:0;
+    --me-1:10px;
+    --me-2:20px;
+    --me-3:30px;
+    --me-4:40px;
+    --me-5:50px;
+
+    /* t = Top */
+    --mt-0:0;
+    --mt-1:10px;
+    --mt-2:20px;
+    --mt-3:30px;
+    --mt-4:40px;
+    --mt-5:50px;
+
+    /* b = Bottom */
+    --mb-0:0;
+    --mb-1:10px;
+    --mb-2:20px;
+    --mb-3:30px;
+    --mb-4:40px;
+    --mb-5:50px;
+
+    /* X = Left-Right */
+    --mx-0:0;
+    --mx-1:10px;
+    --mx-2:20px;
+    --mx-3:30px;
+    --mx-4:40px;
+    --mx-5:50px;
+
+    /* Y = top-bottom */
+    --my-0:0;
+    --my-1:10px;
+    --my-2:20px;
+    --my-3:30px;
+    --my-4:40px;
+    --my-5:50px;
+
+    --size-sm: 10px;
+    --size-md: 15px;
+    --size-xl: 20px;
+    --size-xxl: 25px;
+}
+
 body{
-    background-color: black;
-    color: white;
+    padding: var(--size-md);
+}
+.className {
+    background-color: var(--color-theme);
+}
+
+.className2{
+    color: var( --color-theme);
+}
+
+.box{
+    border: 1px solid var( --color-theme);
+    padding: var(--size-md);
+    margin: var(--size-md) 0px;
 }
