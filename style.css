@@ -1,0 +1,105 @@
+/* h1{
+    color: red;
+} */
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+.col{
+    margin: 20px 0;
+}
+
+/*overflow, is , where, not,  */
+
+/* Overflow */
+.carusal{
+    display: flex;
+    gap: 10px;
+    /* overflow-x: auto; */
+}
+
+.card{
+    width: 240px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+td, th{
+    border: 1px solid black;
+    padding : 10px;
+}
+
+.table-responsive{
+    height: 300px;
+    overflow-y: auto;
+}
+
+
+/* IS , WHERE, NOT */
+h1:is(.active){
+    color: black;
+}
+
+h1:not(.active){
+    color: gray;
+}
+
+h1:where(.head){
+    font-size: 40px;
+}
+
+/* Mobile */
+@media(min-width: 320px) and (max-width: 767px){
+    h1{
+        color: blue;
+    }
+      .row{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Table / Mobile Landscape */
+@media(min-width: 640px) and (max-width:940px){
+    h1{
+        color: green;
+    }
+     .row{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* Small Laptop/ Mac */
+
+@media (min-width: 940px) and (max-width: 1210px) {
+    h1{
+        color: orange;
+    }
+     .row{
+        grid-template-columns: repeat(4,1fr);
+    }
+}   
+
+/* Laptop / Dektop */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    h1{
+        color: blueviolet;
+    }
+
+    .row{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
