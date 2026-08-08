@@ -7,370 +7,294 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        /* .box{
-            height: 80px;
-            width: 80px;
-        }
 
-        .content-box{
-            width: 400px;
-        }
+        <style>
+            .nav-link.active{
+                background-color: black !important;
+                color: white !important;
+            }
 
-        .bx-h {
-            height: 300px;
-        }
-      */
-    </style>
+            .nav-link:not(.active){
+                color: black !important;
+            }
+
+
+            @media(min-width: 320px) and (max-width: 767px){
+                section{
+                    text-align: center !important;
+                }
+                section .col-md-6:last-child .content{
+                    text-align: center !important;
+                }
+            }
+        </style>
 </head>
 
 <body>
-
-    <section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Card Title</h3>
-                            <h3 class="card-subtitle fs-5 text-secondary">Subtitle</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium, natus similique ratione blanditiis deleniti aut quis fugit adipisci consequuntur!</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-success">Accept</button>
-                            <button class="btn btn-danger">Reject</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Card Title</h3>
-                            <h3 class="card-subtitle fs-5 text-secondary">Subtitle</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium, natus similique ratione blanditiis deleniti aut quis fugit adipisci consequuntur!</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-success">Accept</button>
-                            <button class="btn btn-danger">Reject</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Card Title</h3>
-                            <h3 class="card-subtitle fs-5 text-secondary">Subtitle</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium, natus similique ratione blanditiis deleniti aut quis fugit adipisci consequuntur!</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-success">Accept</button>
-                            <button class="btn btn-danger">Reject</button>
-                        </div>
-                    </div>
-                </div>
+            <a class="navbar-brand" href="#">TCM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section>
+    <section class="py-4 bg-primary-subtle">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <table class="table table-striped table-hover table-dark">
-                        <thead>
-                            <tr>
-                                <th>Table Column</th>
-                                <th>Table Column</th>
-                                <th>Table Column</th>
-                                <th>Table Column</th>
-                                <th>Table Column</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                            </tr>
-                            <tr>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                            </tr>
-                            <tr>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                            </tr>
-                            <tr>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                            </tr>
-                            <tr>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                            </tr>
-                            <tr>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                                <td>Table Data</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
+                        <h1 class="display-1 fw-semibold">Welcome To TCM</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facilis error ipsum alias
+                            esse nemo a ullam? Laboriosam, facere modi?
+                        </p>
+                        <div class="cta">
+                            <button class="btn btn-outline-dark rounded-0">Explore TCM</button>
+                            <button class="btn btn-dark rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Download App</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae ratione corrupti
-                            quaerat, minima possimus natus doloribus animi minus provident.</p>
+                    <div class="content text-end py-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlWJYepvYIg2x2RbLla6M2OYpN8bGeSAzlpVZrQFrciA&s=10"
+                            alt="" class="w-50">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <article class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content text-center">
+                        <h1>All Courses</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur rem nulla
+                            beatae et illo optio dicta corporis nobis, laboriosam doloribus facere pariatur eum! Hic
+                            dolores quo unde. Sed!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active rounded-0" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">TCM IT</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  rounded-0" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">TCM Government</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  rounded-0" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">TCM Acedemy</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Government Cards</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Government Cards</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Government Cards</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Acedemic Cards</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Acedemic Cards</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Acedemic Cards</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card’s content.</p>
+                                                <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 
 
-    <!-- <h1 class="display-1 fw-semibold text-primary">Heading</h1>
-    <h1 class="display-2 text-success">Heading</h1>
-    <h1 class="display-3 text-danger">Heading</h1>
-    <h1 class="display-4 text-info">Heading</h1>
-    <h1 class="display-5 text-secondary">Heading</h1> -->
-
-    <!-- <div class="content-box text-center">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates, alias molestiae cumque sunt officia ullam. Nulla quae iste ratione culpa nobis quidem corporis maiores porro ex ullam odio adipisci officiis quo officia, dicta fugit labore voluptas eaque natus, aut architecto! Expedita eos quos vitae voluptate ullam tenetur rem reprehenderit debitis voluptatibus aut hic dolorum, laborum atque? Natus sint provident numquam tempora dolore voluptate quos suscipit architecto magnam recusandae, libero illum iusto dolorem maiores obcaecati adipisci quas veritatis porro quia eos deleniti quidem. Molestias cum praesentium aut distinctio itaque delectus quidem porro aperiam provident. Impedit ipsam corporis fuga doloremque quasi.
-        </p>
-    </div> -->
-
-    <!-- <h1 class="text-primary">Heading</h1>
-    <h1 class="text-success">Heading</h1>
-    <h1 class="text-danger">Heading</h1>
-    <h1 class="text-info">Heading</h1>
-    <h1 class="text-secondary">Heading</h1>
-    <h1 class="text-dark">Heading</h1>
-    <h1 class="text-light">Heading</h1> -->
-
-    <div class="d-flex justify-content-evenly align-items-end">
-        <!-- <div class="box bg-primary">Dark</div>
-            <div class="box bx-h bg-primary-subtle">Light</div>
-            <div class="box bg-success">Dark</div> -->
-        <!-- <div class="box w-100 bg-success-subtle">Light</div>
-            <div class="box w-100 bg-danger">Dark</div>
-            <div class="box w-100 bg-danger-subtle">Light</div>
-            <div class="box w-100 bg-warning">Dark</div>
-            <div class="box w-100 bg-warning-subtle">Light</div>
-            <div class="box w-100 bg-info">Dark</div>
-            <div class="box w-100 bg-info-subtle">Light</div>
-            <div class="box w-100 bg-secondary">Dark</div>
-            <div class="box w-100 bg-secondary-subtle">Light</div>
-            <div class="box w-100 bg-dark">Dark</div>
-            <div class="box w-100 bg-dark-subtle">Light</div>
-            <div class="box w-100 bg-light">Dark</div>
-            <div class="box w-100 bg-light-subtle">Light</div> -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <h3>Download TCM App for Android</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In non quod blanditiis. Magnam amet nam dignissimos, odit dicta reprehenderit suscipit!
+            </p>
+            <button class="btn btn-secondary rounded-0">Download Now</button>
+        </div>
+       
+        </div>
+    </div>
     </div>
 
-    <!-- <div>
-        <button class="btn btn-primary">Explore More</button>
-            <button class="btn btn-success">Explore More</button>
-            <button class="btn btn-warning">Explore More</button>
-            <button class="btn btn-danger">Explore More</button>
-            <button class="btn btn-info">Explore More</button>
-            <button class="btn btn-secondary">Explore More</button>
-            <button class="btn btn-dark">Explore More</button>
-            <button class="btn btn-light">Explore More</button>
-    </div>
-
-     <div>
-            <button class="btn btn-outline-primary">Explore More</button>
-            <button class="btn btn-outline-success">Explore More</button>
-            <button class="btn btn-outline-warning">Explore More</button>
-            <button class="btn btn-outline-danger">Explore More</button>
-            <button class="btn btn-outline-info">Explore More</button>
-            <button class="btn btn-outline-secondary">Explore More</button>
-            <button class="btn btn-outline-dark">Explore More</button>
-            <button class="btn btn-outline-light">Explore More</button>
-    </div>
-
-    <div>
-            <button class="btn rounded-pill btn-outline-primary">Explore More</button>
-            <button class="btn rounded-pill btn-outline-success">Explore More</button>
-            <button class="btn rounded-pill btn-outline-warning">Explore More</button>
-            <button class="btn rounded-pill btn-outline-danger">Explore More</button>
-            <button class="btn rounded-pill btn-outline-info">Explore More</button>
-            <button class="btn rounded-pill btn-outline-secondary">Explore More</button>
-            <button class="btn rounded-pill btn-outline-dark">Explore More</button>
-            <button class="btn rounded-pill btn-outline-light">Explore More</button>
-    </div>
-
-     <div>
-            <button class="btn rounded-3 btn-outline-primary">Explore More</button>
-            <button class="btn rounded-2 btn-outline-success">Explore More</button>
-            <button class="btn rounded-5 btn-outline-warning">Explore More</button>
-            <button class="btn rounded-1 btn-outline-danger">Explore More</button>
-            <button class="btn rounded-0 btn-outline-info">Explore More</button>
-            <button class="btn rounded-3 btn-outline-secondary">Explore More</button>
-            <button class="btn rounded-2 btn-outline-dark">Explore More</button>
-            <button class="btn rounded-4 btn-outline-light">Explore More</button>
-    </div>
-
-    <div>
-            <button class="btn btn-sm btn-primary">Explore More</button>
-            <button class="btn btn-sm btn-success">Explore More</button>
-            <button class="btn btn-sm btn-warning">Explore More</button>
-            <button class="btn btn-sm btn-danger">Explore More</button>
-            <button class="btn btn-sm btn-info">Explore More</button>
-            <button class="btn btn-sm btn-secondary">Explore More</button>
-            <button class="btn btn-sm btn-dark">Explore More</button>
-            <button class="btn btn-sm btn-light">Explore More</button>
-    </div>
-
-     <div>
-            <button class="btn btn-lg btn-primary">Explore More</button>
-            <button class="btn btn-lg btn-success">Explore More</button>
-            <button class="btn btn-lg btn-warning">Explore More</button>
-            <button class="btn btn-lg btn-danger">Explore More</button>
-            <button class="btn btn-lg btn-info">Explore More</button>
-            <button class="btn btn-lg btn-secondary">Explore More</button>
-            <button class="btn btn-lg btn-dark">Explore More</button>
-            <button class="btn btn-lg btn-light">Explore More</button>
-    </div> -->
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
