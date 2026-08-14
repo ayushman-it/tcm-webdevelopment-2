@@ -1,0 +1,15 @@
+h1{}
+.head{}
+#headId{}
+body > .head{}
+body .head{}
+span{
+    color:orange;
+}
+.text-red{
+    color: red;
+}
+
+.fs-lg{
+    font-size: 60px;
+}

@@ -236,10 +236,88 @@ users.forEach(agent => {
 
 // do while loop
 
-let num = 41;
+// let num = 41;
 
-do{
-    console.log(num);
-    num++;
-}
-while(num <= 10)
+// do{
+//     console.log(num);
+//     num++;
+// }
+// while(num <= 10)
+
+
+// if else
+
+// let age = 12;
+
+// if(age == 18 ){
+//     console.log("Candidate is eligible for a exam")
+// }
+// else if(age >= 50){
+//     console.log("Candidate is too old...")
+// }
+// else if(age >= 50){
+//     console.log("Candidate is too old...")
+// }
+// else if(age >= 50){
+//     console.log("Candidate is too old...")
+// }
+// else{
+//     console.log("Camndidate is young..")
+// }
+
+// let color = "yellow";
+
+// if(color == "blue"){
+//     console.log("Yes color is blue");
+// }
+// else if(color == "Green"){
+//     console.log("Yes color is green");
+// }
+// else if(color == "red"){
+//     console.log("Yes is color is red");
+// }
+// else{
+//     console.log("Color Not Found")
+// }
+
+// let color = "Orange";
+
+// switch (color) {
+//     case "Red":
+//         console.log("Block A");
+//         break;
+//     case "Green":
+//         console.log("Block C");
+//         break;
+//     case "Blue":
+//         console.log("Block B");
+//         break;
+
+//     default:
+//         console.log("Color Not Found...")
+//         break;
+// }
+
+// DOM - Document Object Modal
+
+
+// console.log(document.getElementsByTagName('h1')[2])
+// console.log(document.getElementsByClassName('head')[1]);
+// console.log(document.getElementById("headId"));
+
+// console.log(document.querySelector('h1'));
+// console.log(document.querySelector('body  .head'));
+// console.log(document.querySelectorAll('.head')[1]);
+
+let head = document.getElementById('headId');
+
+// head.innerText = "Hello I am <span>JS</span> Text ";
+head.innerHTML = "Hello I am <span>JS</span> Text ";
+
+// head.style.color = "red";
+// head.style.fontSize = '60px';
+
+// head.setAttribute('class', 'text-red fs-lg');
+
+head.classList.add('text-red','fs-lg');
+
