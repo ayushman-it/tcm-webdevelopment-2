@@ -1,323 +1,168 @@
-// alert("Hello Javascript");
-// console.log("Hello  TCM"); - Rec
-// document.write(2 + 3);
-// confirm("Are you want to delete this ?");
-// prompt("Please enter your product QTY.");
+//Main Parent(Body)---> Create ---> append ---> SetAttribute ---> Content ----> Styling (Optional)
 
-// var (Old), let, const
+// Body
+let body = document.querySelector('body');
 
-// --var = keyword, name = variable, = = operator , Ayushman = Value
-// var name = "Ayushman";
+// Create Header
+let header = document.createElement('header');
+let headerContainer = document.createElement('div');
+let headerRow = document.createElement('div');
+let col1 = document.createElement('div');
+let col2 = document.createElement('div');
 
-// Declearation
-// var name;
-
-// // Initilization/ assign
-// name = "Ayushman";
-// // Initilization/ assign
-// name = "Alok";
-// // Initilization/ assign
-// name = "Rahul";
-// // Initilization/ assign
-// name = "Manoj";
-// // Initilization/ assign
-// name = "Rajesh";
-
-// // Declearation
-// var name;
-
-// // Initilization/ assign
-// name = "Sumit";
-
-// console.log(name);
+// Append (Make a child)
+body.appendChild(header);
+header.appendChild(headerContainer);
+headerContainer.appendChild(headerRow);
+headerRow.appendChild(col1);
+headerRow.appendChild(col2);
 
 
-// Declearation
-// let name;
-
-// // Initilization/ assign
-// name = "Ayushman";
-
-// // Initilization/ assign
-// name = "Rakesh";
-
-// // Initilization/ assign
-// name = "Ranjit";
-
-// console.log(name)
+// Set Attribute 
+header.setAttribute('class', 'py-2 shadow-sm')
+headerContainer.setAttribute('class', 'container');
+headerRow.setAttribute('class', 'row align-items-center');
+col1.setAttribute('class', 'col-md-6');
+col2.setAttribute('class', 'col-md-6');
 
 
+// Content Creation
+col1.innerHTML = `
+    <div class='content'>
+        <h3 class='mb-0'>Website Logo</h3>
+    </div>
+`;
 
-// const roll = 8238278;
-// console.log(roll)
-
-// Data Type
-
-// Premetive
-// String
-// let name = "Ayushman";
-// console.log(name, typeof(name));
-// Number
-// let num = 55;
-// console.log(num, typeof(num));
-// Boolean
-// let deleteProject = confirm("Are you want to delete this project");
-// console.log(deleteProject, typeof(deleteProject));
-// undefined
-// let age;
-// console.log(age, typeof(age));
-// null
-// let salary= null;
-// console.log(salary, typeof(salary))
-// BigInt
-// let adhaar = BigInt(322928398667772938293);
-// console.log(adhaar, typeof(adhaar));
-
-// Non Premetive
-// Array
-// let users = ["Rajesh", "Lakhan", "Ramesh", "Mohan"]
-
-// console.log(users[1], typeof(users));
-// console.log(users[2], typeof(users));
+col2.innerHTML = `
+    <div class='content'>
+        <ul class='navbar nav'>
+            <li class='nav-item'><a class='nav-link text-dark'  href='#'>Home</a></li>
+            <li class='nav-item'><a class='nav-link text-dark'  href='#'>About</a></li>
+            <li class='nav-item'><a class='nav-link text-dark'  href='#'>Service</a></li>
+            <li class='nav-item'><a class='nav-link text-dark'  href='#'>Galary</a></li>
+            <li class='nav-item'><a class='nav-link text-dark'  href='#'>Contact Us</a></li>
+        </ul>
+    </div>
+`;
 
 
-// Object
+// -------Section-----
 
-// Array Object
-let users = [
+// Create
+let section = document.createElement('section');
+let sectionContainer = document.createElement('div');
+let sectionRow = document.createElement('div');
+let seccol1 = document.createElement('div');
+
+// Append
+body.appendChild(section);
+section.appendChild(sectionContainer);
+sectionContainer.appendChild(sectionRow);
+sectionRow.appendChild(seccol1);
+
+// Set Attribute
+section.setAttribute('class', 'py-4 border-bottom');
+sectionContainer.setAttribute('class', 'container');
+sectionRow.setAttribute('class', 'row');
+seccol1.setAttribute('class', 'col-md-12');
+
+
+// Content
+
+seccol1.innerHTML = `
+    <div class='sec-content text-center'>
+        <img src="https://app.thecodemunk.in/assets/assets/icon.884d379cf1a5c7b7210335680a3cfcfd.png" width='100'>
+        <h1 class='display-1 fw-semibold'>TCM <span class='text-warning'>One</span></h1>
+        <p class='w-75 my-3 m-auto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto facere doloremque porro! Dolorem eveniet unde iste tempora officiis, incidunt ut mollitia fugit?</p>
+
+        <div class='cta'>
+            <button class='btn btn-dark rounded-0'>Explore TCM One</button>
+            <button class='btn btn-light rounded-0'>Download TCM One App</button>
+        </div>
+    </div>
+`;
+
+// Object Product 
+
+let product = [
     {
-        name: "Ramesh",
-        age: 23,
-        city: "Raipur"
+        prName :" Website Development",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
     },
     {
-        name: "Rakesh",
-        age: 24,
-        city: "Bhilai"
-    },
-    {
-        name: "Mohan",
-        age: 24,
-        city: "Bihar"
-    },
-    {
-        name: "Suresh",
-        age: 22,
-        city: "Durg"
-    },
-    {
-        name: "Amit",
-        age: 25,
-        city: "Bilaspur"
-    },
-    {
-        name: "Rahul",
-        age: 21,
-        city: "Korba"
-    },
-    {
-        name: "Vikas",
-        age: 27,
-        city: "Rajnandgaon"
-    },
-    {
-        name: "Ankit",
-        age: 26,
-        city: "Jagdalpur"
-    },
-    {
-        name: "Rohit",
-        age: 23,
-        city: "Ambikapur"
-    },
-    {
-        name: "Manish",
-        age: 28,
-        city: "Raipur"
-    },
-    {
-        name: "Pankaj",
-        age: 24,
-        city: "Bhilai"
-    },
-    {
-        name: "Deepak",
-        age: 29,
-        city: "Durg"
-    },
-    {
-        name: "Arun",
-        age: 22,
-        city: "Bilaspur"
-    },
-    {
-        name: "Karan",
-        age: 25,
-        city: "Korba"
-    },
-    {
-        name: "Vivek",
-        age: 27,
-        city: "Raipur"
-    },
-    {
-        name: "Nikhil",
-        age: 21,
-        city: "Durg"
-    },
-    {
-        name: "Akash",
-        age: 26,
-        city: "Bhilai"
-    },
-    {
-        name: "Sumit",
-        age: 30,
-        city: "Raipur"
-    },
-    {
-        name: "Varun",
-        age: 24,
-        city: "Bilaspur"
-    },
-    {
-        name: "Harish",
-        age: 28,
-        city: "Korba"
+        prName :" App Development",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },{
+        prName :" Graphic Development",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
     }
+    ,{
+        prName :" DSA",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    }
+    ,{
+        prName :"UI & UX",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },
+       {
+        prName :"Python + Django",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },
+       {
+        prName :"DSA + JAVA",
+        prPrice: "2300",
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    }
+    
 ];
 
-// console.log(users)
+// -------Article-----
 
-// console.log(users[1].name)
-// console.log(users[1].age)
-// console.log(users[1].city)
-
-// for(let agent = 0; agent < users.length; agent++){
-//     console.log(users[agent].name)
-//     console.log(users[agent].age)
-//     console.log(users[agent].city)
-// }
+// Create
+let article = document.createElement('article');
+let articleContainer = document.createElement('div');
+let articleRow = document.createElement('div');
 
 
-// Loops
+// Append
+body.appendChild(article);
+article.appendChild(articleContainer);
+articleContainer.appendChild(articleRow);
 
-// for loop = It will return indexings as a number
-for(let agent = 0; agent < users.length; agent++){
-//    console.log(agent, typeof(agent))
+
+// Set Attribute
+article.setAttribute('class', 'py-4 border-bottom');
+articleContainer.setAttribute('class', 'container');
+articleRow.setAttribute('class', 'row');
+articleRow.setAttribute('id', 'products');
+
+let productsData = document.getElementById('products');
+
+for(let pr of product){
+    productsData.innerHTML +=`
+        <div class='col-md-3'>
+            <div class='card my-2'>
+                <div class='card-body'>
+                    <h4>${pr.prName}</h4>
+                    <p class='fw-bold'>${pr.prdruration}</p>
+                    <p>${pr.prDescrption}</p>
+                    <h3 class='text-danger'>${pr.prPrice}</h3>
+                </div>
+            </div>
+        </div>
+    `;
 }
-
-// for in loop - It will return indexings as a string
-
-for(let agent in users){
-//    console.log(agent, typeof(agent))
-}
-
-// for of loop -  It will return itretes values
-
-for(let agent of users){
-//    console.log(agent, typeof(agent))
-}
-
-// for each loop - It will return itretes values
-
-users.forEach(agent => {
-    //  console.log(agent, typeof(agent))
-})
-
-// while
-
-// let num = 15;
-
-// while(num <= 10){
-//     console.log(num);
-//     num++;
-// }
-
-// do while loop
-
-// let num = 41;
-
-// do{
-//     console.log(num);
-//     num++;
-// }
-// while(num <= 10)
-
-
-// if else
-
-// let age = 12;
-
-// if(age == 18 ){
-//     console.log("Candidate is eligible for a exam")
-// }
-// else if(age >= 50){
-//     console.log("Candidate is too old...")
-// }
-// else if(age >= 50){
-//     console.log("Candidate is too old...")
-// }
-// else if(age >= 50){
-//     console.log("Candidate is too old...")
-// }
-// else{
-//     console.log("Camndidate is young..")
-// }
-
-// let color = "yellow";
-
-// if(color == "blue"){
-//     console.log("Yes color is blue");
-// }
-// else if(color == "Green"){
-//     console.log("Yes color is green");
-// }
-// else if(color == "red"){
-//     console.log("Yes is color is red");
-// }
-// else{
-//     console.log("Color Not Found")
-// }
-
-// let color = "Orange";
-
-// switch (color) {
-//     case "Red":
-//         console.log("Block A");
-//         break;
-//     case "Green":
-//         console.log("Block C");
-//         break;
-//     case "Blue":
-//         console.log("Block B");
-//         break;
-
-//     default:
-//         console.log("Color Not Found...")
-//         break;
-// }
-
-// DOM - Document Object Modal
-
-
-// console.log(document.getElementsByTagName('h1')[2])
-// console.log(document.getElementsByClassName('head')[1]);
-// console.log(document.getElementById("headId"));
-
-// console.log(document.querySelector('h1'));
-// console.log(document.querySelector('body  .head'));
-// console.log(document.querySelectorAll('.head')[1]);
-
-let head = document.getElementById('headId');
-
-// head.innerText = "Hello I am <span>JS</span> Text ";
-head.innerHTML = "Hello I am <span>JS</span> Text ";
-
-// head.style.color = "red";
-// head.style.fontSize = '60px';
-
-// head.setAttribute('class', 'text-red fs-lg');
-
-head.classList.add('text-red','fs-lg');
 
