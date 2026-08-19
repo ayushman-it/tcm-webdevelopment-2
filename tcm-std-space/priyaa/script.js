@@ -60,41 +60,41 @@
 
 // 2. objects
 
-let allusers = [
-    {
-        name: "priya soni",
-        city: "waraseoni",
-        age: 22,
-        phone: 7247632099
-    }, {
-        name: "jyoti soni",
-        city: "delhi",
-        age: 23,
-        phone: 7248775469
-    }, {
-        name: "priyanka",
-        city: "jabalpur",
-        age: 25,
-        phone: 7254532099
-    }, {
-        name: "Ayushman",
-        city: "Raipur",
-        age: 24,
-        phone: 8239289389
-    },
-    {
-        name: "Varun",
-        age: 24,
-        city: "Bilaspur",
-        phone: 8239289389
-    },
-    {
-        name: "Harish",
-        age: 28,
-        city: "Korba",
-        phone: 8239289389
-    }
-]
+// let allusers = [
+//     {
+//         name: "priya soni",
+//         city: "waraseoni",
+//         age: 22,
+//         phone: 7247632099
+//     }, {
+//         name: "jyoti soni",
+//         city: "delhi",
+//         age: 23,
+//         phone: 7248775469
+//     }, {
+//         name: "priyanka",
+//         city: "jabalpur",
+//         age: 25,
+//         phone: 7254532099
+//     }, {
+//         name: "Ayushman",
+//         city: "Raipur",
+//         age: 24,
+//         phone: 8239289389
+//     },
+//     {
+//         name: "Varun",
+//         age: 24,
+//         city: "Bilaspur",
+//         phone: 8239289389
+//     },
+//     {
+//         name: "Harish",
+//         age: 28,
+//         city: "Korba",
+//         phone: 8239289389
+//     }
+// ]
 
 // console.log(allusers)
 
@@ -121,9 +121,9 @@ let allusers = [
 
 // for in loop 
 
-for(let agent in allusers){
-    console.log(agent, typeof(agent))
-}
+// for(let agent in allusers){
+//     console.log(agent, typeof(agent))
+// }
 
 // for of loop
 
@@ -136,15 +136,6 @@ for(let agent in allusers){
 // allusers.forEach(agent => {
 //     console.log(agent, typeof(agent))
 // })
-
-// while
-
-let num = 20;
-
-while(num <= 15){
-    console.log(num);
-    num++;
-}
 
 // if else
 
@@ -161,17 +152,27 @@ while(num <= 15){
     // }
 
 
-    let color = "green";
+    // let color = "green";
 
-    if(color == "blue"){
-        console.log("yes color is blue")
-    }
-    else if(color == "yellow"){
-        console.log("yes color is yellow")
-    }
-    else if(color == "green"){
-        console.log("yes color is green")
-    }
-    else{
-        console.log("something went wrong")
-    }
+    // if(color == "blue"){
+    //     console.log("yes color is blue")
+    // }
+    // else if(color == "yellow"){
+    //     console.log("yes color is yellow")
+    // }
+    // else if(color == "green"){
+    //     console.log("yes color is green")
+    // }
+    // else{
+    //     console.log("something went wrong")
+    // }
+
+    // // Dom - document object model
+
+    // // console.log(document.getElementsByClassName('h1'));
+    // // console.log(document.getElementById("one"));
+    // // console.log(document.getElementsByClassName('class'));
+
+    // // let row = document.getElementById('oneId');
+
+
