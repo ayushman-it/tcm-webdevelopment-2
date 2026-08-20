@@ -1,4 +1,4 @@
-//Main Parent(Body)---> Create ---> append ---> SetAttribute ---> Content ----> Styling (Optional)
+//Main Parent(Body)---> Create ---> append ---> SetAttribute ---> Content
 
 // Body
 let body = document.querySelector('body');
@@ -82,53 +82,6 @@ seccol1.innerHTML = `
     </div>
 `;
 
-// Object Product 
-
-let product = [
-    {
-        prName :" Website Development",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    },
-    {
-        prName :" App Development",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    },{
-        prName :" Graphic Development",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    }
-    ,{
-        prName :" DSA",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    }
-    ,{
-        prName :"UI & UX",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    },
-       {
-        prName :"Python + Django",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    },
-       {
-        prName :"DSA + JAVA",
-        prPrice: "2300",
-        prdruration: "2 Month",
-        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
-    }
-    
-];
-
 // -------Article-----
 
 // Create
@@ -151,15 +104,80 @@ articleRow.setAttribute('id', 'products');
 
 let productsData = document.getElementById('products');
 
+
+
+// Object Product 
+
+let product = [
+    {
+        prName :" Website Development",
+        prPrice: "2300",
+        seats : 20,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },
+    {
+        prName :" App Development",
+        prPrice: "2300",
+        seats : 10,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },{
+        prName :" Graphic Development",
+        prPrice: "2300",
+        seats : 20,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    }
+    ,{
+        prName :" DSA",
+        prPrice: "2300",
+        seats : 9,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    }
+    ,{
+        prName :"UI & UX",
+        prPrice: "2300",
+        seats : 10,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },
+       {
+        prName :"Python + Django",
+        prPrice: "2300",
+        seats : 23,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    },
+       {
+        prName :"DSA + JAVA",
+        prPrice: "2300",
+        seats : 4,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    }
+    ,
+       {
+        prName :"Graphic Design",
+        prPrice: "24500",
+        seats : 8,
+        prdruration: "2 Month",
+        prDescrption: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit ipsam vitae eum consequatur voluptas expedita architecto"
+    }
+];
+
+
 for(let pr of product){
     productsData.innerHTML +=`
         <div class='col-md-3'>
-            <div class='card my-2'>
+            <div class='card my-2 ${(pr.seats > 10) ? 'bg-primary-subtle text-primary' : 'bg-warning-subtle text-dark'}'>
                 <div class='card-body'>
+                    <span class="badge rounded-pill ${(pr.seats > 10) ? " text-bg-primary" : "text-bg-danger"}">${(pr.seats > 10) ? "Seats Available only"  : "Low Seats Alert"} - ${pr.seats}</span>
                     <h4>${pr.prName}</h4>
                     <p class='fw-bold'>${pr.prdruration}</p>
                     <p>${pr.prDescrption}</p>
-                    <h3 class='text-danger'>${pr.prPrice}</h3>
+                    <h3 class='text-warning fw-bold'>${pr.prPrice}</h3>
                 </div>
             </div>
         </div>
