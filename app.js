@@ -1,79 +1,69 @@
-// keyword,  pratham
-// function pratham(){
-//     alert("Pratham");
+
+// Arithmetic Operator
+
+// let x = 50;
+// let y = 50;
+
+
+// let z = x + y;
+// console.log(z);
+// let z = x - y;
+// console.log(z);
+// let z = x * y;
+// console.log(z);
+// let z = x / y;
+// console.log(z);
+// let z = x % y;
+// console.log(z);
+
+// console.log(x++);
+// let z = x--;
+// console.log(--x);
+
+// Assignment Operator
+
+// let x = 10;
+// +=5
+// let y = x + 5;
+// console.log(y)
+
+// // --5
+// let y = x - 5;
+// console.log(y)
+
+// **5
+// let y = x * 5;
+// console.log(y)
+
+// // /=5
+// let y = x / 5;
+// console.log(y)
+
+// %=5
+// let y = x % 5;
+// console.log(y)
+
+
+// Comperison Operator
+// let password = "123";
+
+// if(password == 123){
+//     console.log("Login Succesfully")
+// }else{
+//     console.log("Incorrect Password")
 // }
-// function jig(){
-//     alert("Jigyasa");
-// }
-// function arohi(){
-//    alert("Arohi");
-// }
-// function rahul(){
-//     alert("Rahul");
+
+// let age  = 70;
+// if(age <= 70){
+//     console.log("user is Eligible")
+// }else{
+//     console.log("User is too old")
 // }
 
-// Calling
-// pratham()
+// let age = 18;
 
-// Simple Function
-// function name(){
-//     console.log('Hii i am Name');
+// if(age !== "18"){
+//     console.log("User is not Eligible")
+// }else{
+//     console.log("User is Eligible")
 // }
-// name();
-
-
-// Nested Function
-// function parent(){
-//     console.log("Parent Function")
-//     function child(){
-//         console.log("Child Function")
-//         function megaChild(){
-//             console.log("Mega Child Function")
-//         }megaChild()
-//     }child()
-// }
-// parent()
-
-
-// Function With Parameter
-// function calculator(num1, num2){
-//     let total = num1 + num2;
-//     console.log(total)
-// }
-// calculator(34, 76);
-// calculator(23, 23);
-
-// Variable Function
-// let fn = function(){
-//     console.log("Hello i am variable function")
-// }
-// fn()
-
-// Arrow Function
-// let fn = ()=> {console.log("Hello i am arrow function")}
-// fn()
-
-
-// Clouser Function
-// function parent(){
-//     let x = 60;
-//     function child(){
-//         let y = 70;
-//         function megaChild(){
-//             let total = x + y;
-//             console.log(total)
-//         }megaChild()
-//     }child()
-// }
-// parent()
-
-
-// Anonymous Function / Instant Invoke Function
-// (function(){
-//     console.log("Happy Hacking...:)")
-// })();
-
-// -------
-// Callback Function
-// Async function
-// Sync Function
