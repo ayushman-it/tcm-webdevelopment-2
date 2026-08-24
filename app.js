@@ -1,323 +1,60 @@
-// alert("Hello Javascript");
-// console.log("Hello  TCM"); - Rec
-// document.write(2 + 3);
-// confirm("Are you want to delete this ?");
-// prompt("Please enter your product QTY.");
-
-// var (Old), let, const
-
-// --var = keyword, name = variable, = = operator , Ayushman = Value
-// var name = "Ayushman";
-
-// Declearation
-// var name;
-
-// // Initilization/ assign
-// name = "Ayushman";
-// // Initilization/ assign
-// name = "Alok";
-// // Initilization/ assign
-// name = "Rahul";
-// // Initilization/ assign
-// name = "Manoj";
-// // Initilization/ assign
-// name = "Rajesh";
-
-// // Declearation
-// var name;
-
-// // Initilization/ assign
-// name = "Sumit";
-
-// console.log(name);
-
-
-// Declearation
-// let name;
-
-// // Initilization/ assign
-// name = "Ayushman";
-
-// // Initilization/ assign
-// name = "Rakesh";
-
-// // Initilization/ assign
-// name = "Ranjit";
-
-// console.log(name)
-
-
-
-// const roll = 8238278;
-// console.log(roll)
-
-// Data Type
-
-// Premetive
-// String
-// let name = "Ayushman";
-// console.log(name, typeof(name));
-// Number
-// let num = 55;
-// console.log(num, typeof(num));
-// Boolean
-// let deleteProject = confirm("Are you want to delete this project");
-// console.log(deleteProject, typeof(deleteProject));
-// undefined
-// let age;
-// console.log(age, typeof(age));
-// null
-// let salary= null;
-// console.log(salary, typeof(salary))
-// BigInt
-// let adhaar = BigInt(322928398667772938293);
-// console.log(adhaar, typeof(adhaar));
-
-// Non Premetive
-// Array
-// let users = ["Rajesh", "Lakhan", "Ramesh", "Mohan"]
-
-// console.log(users[1], typeof(users));
-// console.log(users[2], typeof(users));
-
-
-// Object
-
-// Array Object
-let users = [
-    {
-        name: "Ramesh",
-        age: 23,
-        city: "Raipur"
-    },
-    {
-        name: "Rakesh",
-        age: 24,
-        city: "Bhilai"
-    },
-    {
-        name: "Mohan",
-        age: 24,
-        city: "Bihar"
-    },
-    {
-        name: "Suresh",
-        age: 22,
-        city: "Durg"
-    },
-    {
-        name: "Amit",
-        age: 25,
-        city: "Bilaspur"
-    },
-    {
-        name: "Rahul",
-        age: 21,
-        city: "Korba"
-    },
-    {
-        name: "Vikas",
-        age: 27,
-        city: "Rajnandgaon"
-    },
-    {
-        name: "Ankit",
-        age: 26,
-        city: "Jagdalpur"
-    },
-    {
-        name: "Rohit",
-        age: 23,
-        city: "Ambikapur"
-    },
-    {
-        name: "Manish",
-        age: 28,
-        city: "Raipur"
-    },
-    {
-        name: "Pankaj",
-        age: 24,
-        city: "Bhilai"
-    },
-    {
-        name: "Deepak",
-        age: 29,
-        city: "Durg"
-    },
-    {
-        name: "Arun",
-        age: 22,
-        city: "Bilaspur"
-    },
-    {
-        name: "Karan",
-        age: 25,
-        city: "Korba"
-    },
-    {
-        name: "Vivek",
-        age: 27,
-        city: "Raipur"
-    },
-    {
-        name: "Nikhil",
-        age: 21,
-        city: "Durg"
-    },
-    {
-        name: "Akash",
-        age: 26,
-        city: "Bhilai"
-    },
-    {
-        name: "Sumit",
-        age: 30,
-        city: "Raipur"
-    },
-    {
-        name: "Varun",
-        age: 24,
-        city: "Bilaspur"
-    },
-    {
-        name: "Harish",
-        age: 28,
-        city: "Korba"
-    }
-];
-
-// console.log(users)
-
-// console.log(users[1].name)
-// console.log(users[1].age)
-// console.log(users[1].city)
-
-// for(let agent = 0; agent < users.length; agent++){
-//     console.log(users[agent].name)
-//     console.log(users[agent].age)
-//     console.log(users[agent].city)
+// function calucu(num1, num2){
+//     console.log(num1 + num2)
 // }
 
+// calucu(12, 23);
 
-// Loops
+// let users = [
+//     {
+//         name : "Ayushman",
+//         age: 23,
+//     },
+//      {
+//         name : "Priyanshu",
+//         age: 23
+//     }, {
+//         name : "Priya",
+//         age: 23
+//     },
+//      {
+//         name : "Arohi",
+//         age: 23
+//     }
+// ]
 
-// for loop = It will return indexings as a number
-for(let agent = 0; agent < users.length; agent++){
-//    console.log(agent, typeof(agent))
+// OOP is a part of Advanced Javascript from version ES6, it will help us to create an instance of object using new keyword insted of by literal object, that create reusable properties using constructor and we can create a method in class template. 
+
+class User{
+    constructor(name, age){
+        this.name = name;
+        this.age = age
+    }
+
+    fullDetails(city, phone){
+        this.city = city;
+        this.phone = phone;
+    }
 }
 
-// for in loop - It will return indexings as a string
+let u1 = new User("Ayushman", 23);
+u1.fullDetails("Bilaspur",899898928);
 
-for(let agent in users){
-//    console.log(agent, typeof(agent))
-}
+let u2 = new User("Priyanshu", 21);
+u2.fullDetails("Bhilai", 9829892382);
 
-// for of loop -  It will return itretes values
+let u3 = new User("Rahul", 24);
+u3.fullDetails("Raipur", 8989839839);
 
-for(let agent of users){
-//    console.log(agent, typeof(agent))
-}
+let u4 = new User("Mohan", 34);
+u4.fullDetails("Bihar", 347399343)
 
-// for each loop - It will return itretes values
+let allUser = [u1, u2, u3, u4];
 
-users.forEach(agent => {
-    //  console.log(agent, typeof(agent))
+allUser.forEach(i =>{
+    console.log(i.name, i.age)
 })
 
-// while
-
-// let num = 15;
-
-// while(num <= 10){
-//     console.log(num);
-//     num++;
-// }
-
-// do while loop
-
-// let num = 41;
-
-// do{
-//     console.log(num);
-//     num++;
-// }
-// while(num <= 10)
+// console.log(u1.name, u2.name, u3.name, u4.name)
 
 
-// if else
-
-// let age = 12;
-
-// if(age == 18 ){
-//     console.log("Candidate is eligible for a exam")
-// }
-// else if(age >= 50){
-//     console.log("Candidate is too old...")
-// }
-// else if(age >= 50){
-//     console.log("Candidate is too old...")
-// }
-// else if(age >= 50){
-//     console.log("Candidate is too old...")
-// }
-// else{
-//     console.log("Camndidate is young..")
-// }
-
-// let color = "yellow";
-
-// if(color == "blue"){
-//     console.log("Yes color is blue");
-// }
-// else if(color == "Green"){
-//     console.log("Yes color is green");
-// }
-// else if(color == "red"){
-//     console.log("Yes is color is red");
-// }
-// else{
-//     console.log("Color Not Found")
-// }
-
-// let color = "Orange";
-
-// switch (color) {
-//     case "Red":
-//         console.log("Block A");
-//         break;
-//     case "Green":
-//         console.log("Block C");
-//         break;
-//     case "Blue":
-//         console.log("Block B");
-//         break;
-
-//     default:
-//         console.log("Color Not Found...")
-//         break;
-// }
-
-// DOM - Document Object Modal
-
-
-// console.log(document.getElementsByTagName('h1')[2])
-// console.log(document.getElementsByClassName('head')[1]);
-// console.log(document.getElementById("headId"));
-
-// console.log(document.querySelector('h1'));
-// console.log(document.querySelector('body  .head'));
-// console.log(document.querySelectorAll('.head')[1]);
-
-let head = document.getElementById('headId');
-
-// head.innerText = "Hello I am <span>JS</span> Text ";
-head.innerHTML = "Hello I am <span>JS</span> Text ";
-
-// head.style.color = "red";
-// head.style.fontSize = '60px';
-
-// head.setAttribute('class', 'text-red fs-lg');
-
-head.classList.add('text-red','fs-lg');
-
+// Object - Car = Color, price, brand, showroom, type
