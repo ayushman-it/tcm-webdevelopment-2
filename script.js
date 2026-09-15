@@ -21,9 +21,12 @@
 // // User Seen his deposted money on screen
 // console.log(account.getBalance())
 
+// Enclosing Part
 // class Mobile{
+//     // Capsule
 //     #password = 1234;
 
+//     // Geter Method
 //     showPassword(){
 //         return this.#password;
 //     }
@@ -66,25 +69,82 @@
 
 // console.log("Powder");
 
-class ATM{
-    withdraw(){
-        this.#checkbalanace();
-        this.#verify();
+// class ATM{
+//     withdraw(){
+//         this.#checkbalanace();
+//         this.#verify();
 
-        console.log("Cash Withdraw")
-    }
+//         console.log("Cash Withdraw")
+//     }
 
-    #checkbalanace(){
-        console.log("Checking Balance...")
-    }
+//     #checkbalanace(){
+//         console.log("Checking Balance...")
+//     }
 
-    #verify(){
-         console.log("Verfying...");
-    }
-}
+//     #verify(){
+//          console.log("Verfying...");
+//     }
+// }
 
-let atm = new ATM();
+// let atm = new ATM();
 
-atm.withdraw();
+// atm.withdraw();
 // console.log()
 // document.getElementById()
+
+
+// Aman 
+// Teacher
+
+// Aman
+// Friend
+
+// Aman 
+// Father
+
+
+
+// class Animal{
+//     sounds(){
+//         console.log("Animals makes sound...");
+//     }
+// }
+
+// class Dog extends Animal{
+//     sounds(){
+//         console.log("Dogs Barks");
+//     }
+// }
+
+// class Cat extends Animal{
+//     sounds(){
+//         console.log("Cat Meow");
+//     }
+// }
+
+// let a1 = new Animal();
+// let u1 = new Dog();
+// let u2 = new Cat();
+
+// a1.sounds();
+// u1.sounds();
+// u2.sounds();
+
+
+// class Mobile{
+//     #password = 12234;
+
+//     geterPass(){
+//         return this.#password;
+//     }
+// }
+
+// let u1 = new Mobile();
+// console.log(u1.password);
+
+
+// Mujhe cake banana hai ;
+
+// 1 + 1 + 1 + 1 = 
+
+// powder

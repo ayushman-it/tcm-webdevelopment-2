@@ -1,5 +1,4 @@
-import Car from "../export/car.js";
+import Car from "../export/Car.js";
 
-let c1 = new Car("Audi", "239499");
-
+let c1 = new Car("Audi", 372387);
 console.log(c1);
